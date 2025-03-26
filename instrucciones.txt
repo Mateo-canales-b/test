@@ -19,9 +19,3 @@ git branch
 
 mover entre ramas 
 git checkout <nombre de la rama>
-
-=======
-
-
-
->>>>>>> 4a30d538a3b1ac8a97188fb4ab821c7a3ab3a3bd

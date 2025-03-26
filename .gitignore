@@ -6,7 +6,8 @@
 obj/
 a.out
 *.bin
-*.a26
+*.a26git brand
 
 # Add in special Atari 7800-based binaries for good measure
 *.a78
+.DS_Store

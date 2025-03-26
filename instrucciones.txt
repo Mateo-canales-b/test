@@ -1,0 +1,13 @@
+nuevo repositorio 
+crearlo en github 
+copiar el codigo 
+abrir carpeta en terminal 
+git clone <url>
+
+subir archivo
+primero debemos dar a git status
+git add <nombre archivo o . para subir todos los archivos>
+git commit -m "comentario"
+git push
+
+añadir un archivo fura de la rama principal

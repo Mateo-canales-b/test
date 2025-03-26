@@ -4,10 +4,24 @@ copiar el codigo
 abrir carpeta en terminal 
 git clone <url>
 
-subir archivo
+<<<<<<< HEAD
+nuevamente estamos probando 
 primero debemos dar a git status
 git add <nombre archivo o . para subir todos los archivos>
 git commit -m "comentario"
 git push
+ 
+nueva rama 
+git branch <nombre de la nueva rama>
 
-añadir un archivo fura de la rama principal
+revisar las ramas existentes 
+git branch  
+
+mover entre ramas 
+git checkout <nombre de la rama>
+
+=======
+
+
+
+>>>>>>> 4a30d538a3b1ac8a97188fb4ab821c7a3ab3a3bd

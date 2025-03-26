@@ -1,0 +1,36 @@
+ls sirve para saber que archivos o carpetas existen en la carpeta actual
+cd p sirve para moverse entre las carpetas 
+pwd cual es la ruta actual que estoy utilizando 
+mkdir "<nombre de la carpeta>" sirve para crear una carpeta vacía 
+clear sirve para limpiar la consola
+
+# Comandos adicionales de consola
+
+# Comandos generales de la terminal
+touch "<nombre del archivo>"   # Crea un archivo vacío
+rm "<archivo>"                # Elimina un archivo
+rmdir "<carpeta>"             # Elimina una carpeta vacía
+rm -r "<carpeta>"             # Elimina una carpeta y todo su contenido
+mv "<origen>" "<destino>"     # Mueve o renombra archivos o carpetas
+cp "<origen>" "<destino>"     # Copia archivos o carpetas
+cat "<archivo>"               # Muestra el contenido de un archivo
+echo "<texto>"                # Imprime texto en la consola o lo guarda en un archivo
+
+# Comandos Git
+git init                      # Inicializa un repositorio Git
+git clone "<URL>"            # Clona un repositorio remoto
+git status                    # Muestra el estado actual del repositorio
+git add "<archivo>"          # Agrega archivos al área de staging
+git commit -m "mensaje"      # Crea un commit con mensaje
+git push                      # Envía los cambios al repositorio remoto
+git pull                      # Descarga cambios del repositorio remoto
+git log                       # Muestra el historial de commits
+
+# Comandos LaTeX (en terminal con pdflatex instalado)
+pdflatex "<archivo>.tex"     # Compila un archivo .tex a PDF
+bibtex "<archivo>"           # Procesa bibliografía del archivo .tex
+latexmk -pdf "<archivo>.tex" # Compilación automática a PDF
+
+# Comandos útiles en Visual Studio Code (VS Code)
+code .                       # Abre VS Code en la carpeta actual
+code "<archivo>"             # Abre un archivo específico en VS Code

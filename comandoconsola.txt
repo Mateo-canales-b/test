@@ -1,3 +1,4 @@
+
 # Comandos generales de la terminal
 
 ls sirve para saber que archivos o carpetas existen en la carpeta actual

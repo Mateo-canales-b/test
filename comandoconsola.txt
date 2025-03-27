@@ -19,7 +19,7 @@ cat "<archivo>"               # Muestra el contenido de un archivo
 echo "<texto>"                # Imprime texto en la consola o lo guarda en un archivo
 grep "<texto>" <archivo>      # Busca texto dentro de un archivo
 history                       # Muestra el historial de comandos usados
-man <comando>                 # Mgit uestra el manual de un comando
+man <comando>                 # Muestra el manual de un comando
 whoami                        # Muestra el nombre del usuario actual
 date                          # Muestra la fecha y hora actual
 uptime                        # Muestra el tiempo que el sistema ha estado encendido

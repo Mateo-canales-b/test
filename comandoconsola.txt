@@ -51,7 +51,7 @@ git merge "<rama>"            # Fusiona una rama a la actual
 git tag                       # Muestra todos los tags que he hecho
 git tag "<nombre de tag>"     # Añade un tag al commit que estoy trabajando 
 :q                            # Salir del editor de texto sin guardar los cambios 
-:qw                            # Salir del editor de texto guardando los cambios 
+:wq                           # Salir del editor de texto guardando los cambios 
 
 # Comandos LaTeX (en terminal con pdflatex instalado)
 pdflatex "<archivo>.tex"     # Compila un archivo .tex a PDF

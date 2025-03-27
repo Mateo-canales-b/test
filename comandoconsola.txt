@@ -1,13 +1,13 @@
+# Comandos generales de la terminal
+
 ls sirve para saber que archivos o carpetas existen en la carpeta actual
 cd "<carpeta>"             # Cambia de carpeta (directorio)
 cd ..                      # Sube un nivel en el árbol de carpetas
 pwd cual es la ruta actual que estoy utilizando 
 mkdir "<nombre de la carpeta>" sirve para crear una carpeta vacía 
-clear sirve para limpiar la consola
-
-# Comandos adicionales de consola
-
-# Comandos generales de la terminal
+clear sirve para limpiar la consola 
+lpstat -p -d                # Te muestra: Impresoras instaladas y Cuál es la impresora predeterminada
+lp <archivo.txt>            # Este comando manda el archivo a la impresora predeterminada.
 touch "<nombre del archivo>"   # Crea un archivo vacío
 rm "<archivo>"                # Elimina un archivo
 rmdir "<carpeta>"             # Elimina una carpeta vacía
@@ -29,6 +29,7 @@ df -h                         # Muestra el uso del espacio en disco en formato l
 du -sh <carpeta>              # Muestra el tamaño de una carpeta
 open <archivo o carpeta>      # Abre un archivo o carpeta con la aplicación por defecto (macOS)
 say "Hola"                    # Reproduce en voz alta un mensaje (solo en macOS)
+ctrl+c                        # Detiene la consola  
 
 # Comandos Git
 git init                      # Inicializa un repositorio Git
@@ -46,6 +47,8 @@ git reset "<archivo>"         # Quita un archivo del área de staging
 git branch                    # Lista ramas existentes
 git checkout -b "<rama>"      # Crea y cambia a una nueva rama
 git merge "<rama>"            # Fusiona una rama a la actual
+git tag                       # Muestra todos los tags que he hecho
+git tag "<nombre de tag>"     # Añade un tag al commit que estoy trabajando 
 :q                            # Salir del editor de texto sin guardar los cambios 
 :qw                            # Salir del editor de texto guardando los cambios 
 
@@ -74,42 +77,38 @@ cmd + shift + s              # Guardar como...
 cmd + w                      # Cierra el archivo actual
 cmd + q                      # Cierra Visual Studio Code
 
-# Alias útiles para Git
+# Alias útiles para Git (ordenados alfabéticamente)
 
-git st         # Equivale a 'git status' - Muestra el estado actual del repositorio
-git co         # Equivale a 'git checkout' - Cambia de rama o recupera archivos
-git br         # Equivale a 'git branch' - Lista todas las ramas
-git ci         # Equivale a 'git commit' - Crea un nuevo commit
-git cm         # Equivale a 'git commit -m' - Crea un commit con mensaje inline
 git aa         # Equivale a 'git add .' - Agrega todos los archivos al área de staging
-git unstage    # Equivale a 'git reset HEAD --' - Quita archivos del área de staging
-git s          # Equivale a 'git status -s' - Muestra el estado en modo compacto
-git lg         # Historial compacto con ramas y colores (log --oneline --graph --all --decorate)
-git tree       # Igual a 'lg' - Visualiza el árbol de commits
-git last       # Muestra el último commit (log -1 HEAD)
-git hist       # Historial detallado con autor y fecha
+git aliases    # Muestra todos los alias configurados en tu Git
 git amend      # Equivale a 'git commit --amend' - Edita el último commit
-git fix        # Equivale a 'git commit --amend --no-edit' - Agrega cambios al último commit sin editar el mensaje
-git df         # Equivale a 'git diff' - Muestra las diferencias de los archivos modificados
-git d          # Equivale a 'git diff --cached' - Muestra los cambios en staging
-git pl         # Equivale a 'git pull' - Descarga los cambios del repositorio remoto
-git ps         # Equivale a 'git push' - Sube los commits al repositorio remoto
-git pff        # Equivale a 'git pull --ff-only' - Hace pull solo si se puede hacer fast-forward
+git br         # Equivale a 'git branch' - Lista todas las ramas
 git cleanall   # Equivale a 'git clean -fdx' - Elimina todos los archivos no rastreados (¡peligroso!)
-
-# Más alias útiles para Git
-
+git cm         # Equivale a 'git commit -m' - Crea un commit con mensaje inline
+git co         # Equivale a 'git checkout' - Cambia de rama o recupera archivos
+git contrib    # Equivale a 'git shortlog -sn' - Lista los contribuidores ordenados por cantidad de commits
 git cp         # Equivale a 'git cherry-pick' - Aplica commits individuales desde otra rama
+git d          # Equivale a 'git diff --cached' - Muestra los cambios en staging
+git df         # Equivale a 'git diff' - Muestra las diferencias de los archivos modificados
+git fix        # Equivale a 'git commit --amend --no-edit' - Agrega cambios al último commit sin editar el mensaje
+git hist       # Historial detallado con autor y fecha
+git last       # Muestra el último commit (log -1 HEAD)
+git lg         # Historial compacto con ramas y colores (log --oneline --graph --all --decorate)
+git pff        # Equivale a 'git pull --ff-only' - Hace pull solo si se puede hacer fast-forward
+git pl         # Equivale a 'git pull' - Descarga los cambios del repositorio remoto
+git pop        # Equivale a 'git stash pop' - Restaura el último stash guardado
+git ps         # Equivale a 'git push' - Sube los commits al repositorio remoto
 git rb         # Equivale a 'git rebase' - Reaplica commits sobre otra base
 git rbi        # Equivale a 'git rebase -i HEAD~n' - Rebase interactivo para editar los últimos n commits
-git undo       # Equivale a 'git revert HEAD' - Revierte el último commit sin alterar el historial
-git wip        # Equivale a 'git commit -m "wip"' - Hace un commit temporal (work in progress)
-git aliases    # Muestra todos los alias configurados en tu Git
-git who        # Muestra quién fue el último en modificar cada línea del archivo (usa git blame)
-git shortlog   # Muestra un resumen de commits por autor
-git contrib    # Equivale a 'git shortlog -sn' - Lista los contribuidores ordenados por cantidad de commits
-git review     # Equivale a 'git log origin/main..HEAD' - Muestra commits aún no enviados al remoto
-git save       # Equivale a 'git stash save "trabajo temporal"' - Guarda cambios temporales
-git pop        # Equivale a 'git stash pop' - Restaura el último stash guardado
-git stashlist  # Equivale a 'git stash list' - Muestra los stashes disponibles
 git remotes    # Equivale a 'git remote -v' - Lista los repositorios remotos configurados
+git review     # Equivale a 'git log origin/main..HEAD' - Muestra commits aún no enviados al remoto
+git s          # Equivale a 'git status -s' - Muestra el estado en modo compacto
+git save       # Equivale a 'git stash save "trabajo temporal"' - Guarda cambios temporales
+git shortlog   # Muestra un resumen de commits por autor
+git st         # Equivale a 'git status' - Muestra el estado actual del repositorio
+git stashlist  # Equivale a 'git stash list' - Muestra los stashes disponibles
+git tree       # Igual a 'lg' - Visualiza el árbol de commits
+git undo       # Equivale a 'git revert HEAD' - Revierte el último commit sin alterar el historial
+git unstage    # Equivale a 'git reset HEAD --' - Quita archivos del área de staging
+git who        # Muestra quién fue el último en modificar cada línea del archivo (usa git blame)
+git wip        # Equivale a 'git commit -m "wip"' - Hace un commit temporal (work in progress)

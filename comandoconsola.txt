@@ -1,4 +1,3 @@
-
 # Comandos generales de la terminal
 
 ls sirve para saber que archivos o carpetas existen en la carpeta actual
@@ -57,6 +56,38 @@ git tag "<nombre de tag>"     # Añade un tag al commit que estoy trabajando
 pdflatex "<archivo>.tex"     # Compila un archivo .tex a PDF
 bibtex "<archivo>"           # Procesa bibliografía del archivo .tex
 latexmk -pdf "<archivo>.tex" # Compilación automática a PDF
+
+# Comandos útiles en LaTeX (dentro del archivo .tex)
+
+\textbf{texto}               % Texto en negrita (boldface)
+\textit{texto}               % Texto en cursiva (italic)
+\underline{texto}            % Subraya el texto
+\texttt{texto}               % Fuente monoespaciada tipo máquina de escribir
+
+{\tiny texto}                % ~5pt - Tamaño más pequeño disponible
+{\scriptsize texto}          % ~7pt - Segundo más pequeño
+{\footnotesize texto}        % ~8pt - Para notas al pie
+{\small texto}               % ~9pt - Más pequeño que el normal
+{\normalsize texto}          % 10pt - Tamaño normal por defecto
+{\large texto}               % ~12pt - Ligeramente más grande
+{\Large texto}               % ~14pt - Más grande que \large
+{\LARGE texto}               % ~17pt - Más grande que \Large
+{\huge texto}                % ~20pt - Más grande que \LARGE
+{\Huge texto}                % ~25pt - Tamaño de letra más grande
+
+\textcolor{red}{texto}       % Cambia el color del texto (requiere \usepackage{xcolor})
+\colorbox{yellow}{texto}     % Fondo de color (requiere \usepackage{xcolor})
+
+\begin{center}texto\end{center}    % Centra el texto
+\begin{flushright}texto\end{flushright}  % Alinea a la derecha
+\begin{flushleft}texto\end{flushleft}    % Alinea a la izquierda
+
+\begin{itemize}...\end{itemize}    % Lista con viñetas
+\begin{enumerate}...\end{enumerate}  % Lista numerada
+
+\section{Título}             % Sección
+\subsection{Subtítulo}      % Subsección
+\subsubsection{Subsubtítulo} % Subsubsección
 
 # Comandos útiles en Visual Studio Code (VS Code)
 code .                       # Abre VS Code en la carpeta actual
